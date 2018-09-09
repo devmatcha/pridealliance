@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WU Pride Alliance</title>
+    <meta name="description" content="WashU's Pride Alliance!">
+    <link id="favicon" rel="icon" href="https://png.icons8.com/color/1600/rainbow.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+    <script>
+      function isValid() {
+        if (!(document.getElementById("form").elements[1].value.endsWith() === "@wustl.edu")) {
+          return alert("Not a valid WUSTL email!");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="whole">
+      <header>
+        <div id="title">
+          <a href="/"><h1>wustl</h1>
+          <h2>Pride</h2> <h2 class="underline">Allianc<span style="letter-spacing: 0">e</span></h2></a>
+        </div>
+        <div class="rainbow">
+          <div class="pastel-red">
+          </div>
+          <div class="pastel-orange">
+          </div>
+          <div class="pastel-yellow">
+          </div>
+          <div class="pastel-green">
+          </div>
+          <div class="pastel-blue">
+          </div>
+          <div class="pastel-indigo">
+          </div>
+          <div class="pastel-purple">
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/events" class="redorange-link">Events</a></li>
+            <li><a href="/contact" class="greenyellow-link">Contact Us</a></li>
+            <li><a href="/join" class="bluepurple-link">Join Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>Join our Mailing List!</h1>
+        <p>If you like what we do, please feel free to join our mailing list! You must be a WashU student and provide a valid WUSTL email in order to join. Thank you for your support!</p>
+        <p class="msg"></p>
+        <form id="form" method="post">
+          <label for="name">Name:</label>
+          <input name="name" type="text" placeholder="Name" required>
+          <br>
+          <label for="email">Email:</label>
+          <input name="email" type="email" placeholder="E-mail" required>
+          <br>
+          <label for="year">Year:</label>
+          <input name="year" type="text" placeholder="Year in School" required>
+          <input name="submit" type="submit" onclick="isValid()">
+        </form>
+      </main>
+      <footer>
+        WU Pride Alliance &copy; 2018
+      </footer>
+    </div>
+  </body>
+</html>

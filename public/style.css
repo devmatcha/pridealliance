@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Raleway:200');
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: verdana;
+        height: auto;
+        background: linear-gradient(#fff, #fffffa);
+        animation: fade 2s;
+        -webkit-animation: fade 2s;
+        color: #343166;
+      }
+
+      a:link, a:visited {
+        color: #59b395;
+        text-decoration: none;
+        transition: color 0.5s;
+      }
+
+      a:hover, a:active {
+        color: #6ee6b0;
+      }
+  
+      #whole {
+        width: 100vw;
+        margin: auto;
+      }
+
+      header {
+        margin: 0;
+        padding: 0;
+        width: inherit;
+        height: 50vh;
+      }
+
+      #title {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        margin-left: 17vw;
+        width: auto;
+        height: inherit;
+        text-align: justify;
+        line-height: 0.7;
+      }
+
+      #title h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 12vh;
+        letter-spacing: 1.5vw;
+        margin-left: -1vw;
+        font-variant: small-caps;
+        color: #ff6b7f;
+        font-weight: 600;
+        line-height: 0.3;
+      }
+
+      #title h2 {
+        letter-spacing: 3vw;
+        font-family: 'Poppins', sans-serif;
+        font-size: 6vh;
+        color: #4f4c8f;
+      }
+
+      #title .underline {
+        letter-spacing: 1vw;
+        text-decoration: underline;
+        text-decoration-color: #8cfa4b;
+        text-underline-position: under;
+      }
+
+      #title a:link, #title a:visited {
+        transition: color 0.5s;
+      }
+
+      #title a:hover, #title a:active {
+        color: transparent;
+      }
+
+      .rainbow {
+        position: absolute;
+        height: 7vh;
+        top: 0;
+        width: inherit;
+        z-index: 999;
+      }
+
+      .pastel-red {
+        height: 1vh;
+        background: #ff8c8c;
+      }
+      .pastel-orange {
+        height: 1vh;
+        background: #ffcc8c;
+      }
+
+      .pastel-yellow {
+        height: 1vh;
+        background: #fffc8c;
+      }
+
+      .pastel-green {
+        height: 1vh;
+        background: #8cff8c;
+      }
+
+      .pastel-blue {
+        height: 1vh;
+        background: #8cffff;
+      }
+
+      .pastel-indigo {
+        height: 1vh;
+        background: #8c8cff;
+      }
+
+      .pastel-purple {
+        height: 1vh;
+        background: #ff8cff;
+      }
+
+      nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40vw;
+        margin-left: 10vw;
+        margin-top: 8vh;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3vh;
+        text-align: right;
+        z-index: 999;
+        line-height: -1vh;
+      }
+
+      nav ul {
+        list-style: none;
+      }
+
+      nav li {
+        margin: 0vh 0.5vw 2vh 0.5vw;
+        display: inline;
+      }
+
+      nav li a {
+        display: block;
+        padding: 1vh 1vw;
+        color: #fff;
+        text-align: center;
+        width: 13vw;
+      }
+
+      #banner {
+        position: absolute;
+        
+      }
+
+      .redorange-link:link, .redorange-link:visited {
+        border-bottom: 0vh solid #ffcc8c;
+        transition: border-bottom 0.5s;
+        background: #ff8c8c;
+        color: #fff;
+      }
+
+      .redorange-link:hover, .redorange-link:active {
+        border-bottom: 3vh solid #ffcc8c;
+      }
+
+      .greenyellow-link:link, .greenyellow-link:visited {
+        border-bottom: 0vh solid #8cff8c;
+        transition: border-bottom 0.5s;
+        background: #fad048;
+        color: #fff;
+      }
+
+      .greenyellow-link:hover, .greenyellow-link:active {
+        border-bottom: 3vh solid #8cff8c;
+      }
+
+      .bluepurple-link:link, .bluepurple-link:visited {
+        border-bottom: 0vh solid #ff8cff;
+        transition: border-bottom 0.5s;
+        background: #8c8cff;
+        color: #fff;
+      }
+
+      .bluepurple-link:hover, .bluepurple-link:active {
+        border-bottom: 3vh solid #ff8cff;
+      }
+
+      main {
+        margin: auto;
+        width: 85vw;
+        margin-bottom: 5vh;
+        padding: 3vh 5vw 10vh 5vw;
+      }
+
+      main h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 4vh;
+        text-align: center;
+      }
+
+      main h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 5vh;
+        text-align: left;
+      }
+
+      main h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3vh;
+        text-align: left;
+      }
+
+      main details {
+        margin: 4vh 0vw;
+        border-radius: 1vh;
+        padding: 2vh;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        font-size: 3vh;
+        background: #ff8a8c;
+        transition: background 0.2s;
+      }
+
+      main details:hover {
+        cursor: pointer;
+        background: #ffa69e;
+      }
+
+      main details p {
+        background: #fff;
+        color: #545099;
+        padding: 1.5vh 1vw;
+        font-size: 2vh;
+        font-family: verdana;
+        line-height: 1.3;
+        text-align: justify;
+      }
+
+      #content {
+        position: relative;
+        width: 40vw;
+        float: right;
+      }
+
+      #gallery {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 25%;
+        width: 40vw;
+        float: left;
+      }
+
+      #slides img {
+        z-index: 999;
+        position: inherit;
+        border: 1px solid #6b717e;
+        height: 50vh;
+      }
+
+      .slide {
+        display: none;
+      }
+
+      #gallery #links {
+        position: absolute;
+        top: 50%;
+        width: inherit;
+        margin: auto;
+      }
+
+      #slides .caption {
+        position: absolute;
+        bottom: 17%;
+        margin-top: -0.8vh;
+        padding: 1.5vh;
+        margin: auto;
+        text-align: center;
+        width: 33vw;
+        height: auto;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 99999;
+      }
+
+      .prev, .next {
+        position: absolute;
+        cursor: pointer;
+        width: auto;
+        height: auto;
+        padding: 3.5vh 1.1vw;
+        margin-right: -2px;
+        color: #8fdb63;
+        font-weight: bold;
+        font-size: 4vh;
+        transition: color 0.6s;
+      }
+
+      .next {
+        margin-right: 0px;
+        right: 0;
+        border-radius: 0px 10px 10px 0px;
+      }
+
+      .prev:hover, .next:hover {
+        color: #7ac94b;
+      }
+
+      .progressDots {
+        text-align: center;
+        position: relative;
+        padding: 3vh 0vw;
+      }
+
+      .dot {
+        cursor: pointer;
+        width: 2vh;
+        height: 2vh;
+        background: #6a66b3;
+        margin: 0vh 1vw;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background 0.6s;
+      }
+
+      .active, .dot:hover {
+        background: #cab5f5;
+      }
+
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      footer {
+        clear: both;
+        width: 100vw;
+        margin: auto;
+        text-align: center;
+        padding: 3vh 0vw;
+        border-top: 0.3vh solid #ebe3b7;
+      }
+
+      @keyframes fade {
+        from {opacity: 0.4}
+        to {opacity: 1}
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: 0.4}
+        to {opacity: 1}
+      }
+
+      form {
+        width: 30vw;
+        margin: auto;
+      }
+
+      input {
+        width: 30vw;
+        display: block;
+        padding: 2vh 1vw;
+        margin: 2vh 0vw;
+        background: #fff;
+        border-radius: 2vh;
+        border: 0.1vh solid #7a75b9;
+        color: #7a75b9;
+      }
+
+      input[type=submit] {
+        width: 10vw;
+        margin: auto;
+        padding: 2vh 1vw;
+        background: #fff;
+        border-radius: 2vh;
+        border: 0.1vh solid #7a75b9;
+        color: #7a75b9;
+      }
+
+      input[type=submit]:hover {
+        cursor: pointer;
+      }
