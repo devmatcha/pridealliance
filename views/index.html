@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WU Pride Alliance</title>
+    <meta name="description" content="WashU's Pride Alliance!">
+    <link id="favicon" rel="icon" href="https://png.icons8.com/color/1600/rainbow.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  <script>
+      var index = -1;
+      var slides = document.getElementsByClassName('slide');
+      var dots = document.getElementsByClassName('dot');
+
+      function invisible() {
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+      }
+
+      function showSlides(n) {
+        invisible();
+        slides[n].style.display = "block";
+        dots[n].className += " active";
+      }
+
+      function changeSlide(n) {
+        index += n;
+        index = index % 4;
+        showSlides(index);
+      }
+
+      function currentSlide(n) {
+        showSlides(index = n-1);
+      }
+
+      function autoChange() {
+        invisible();
+        index = (index + 1) % 4;
+        slides[index].style.display = "block";
+        dots[index].className += " active";
+        setTimeout(autoChange, 5000);
+      }
+    </script>
+  </head>
+  <body onload="autoChange()">
+    <div id="whole">
+      <header>
+        <div id="title">
+          <a href="/"><h1>wustl</h1>
+          <h2>Pride</h2> <h2 class="underline">Allianc<span style="letter-spacing: 0">e</span></h2></a>
+        </div>
+        <div class="rainbow">
+          <div class="pastel-red">
+          </div>
+          <div class="pastel-orange">
+          </div>
+          <div class="pastel-yellow">
+          </div>
+          <div class="pastel-green">
+          </div>
+          <div class="pastel-blue">
+          </div>
+          <div class="pastel-indigo">
+          </div>
+          <div class="pastel-purple">
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/events" class="redorange-link">Events</a></li>
+            <li><a href="/contact" class="greenyellow-link">Contact Us</a></li>
+            <li><a href="/join" class="bluepurple-link">Join Us</a></li>
+          </ul>
+        </nav>
+        <div id="banner">
+          Upcoming event: First Suite Sunday/GBM @ Sept. 9th
+        </div>
+      </header>
+      <main>
+        <div id="gallery">
+          <div id="slides">
+            <div class="slideDiv">
+              <figure class="slide fade">
+                <img src="https://78.media.tumblr.com/0bb95aaff3eb17841baee84b21ca3f81/tumblr_p8zxxmvZXl1szydvjo1_540.png" style="width:100%;">
+                <figcaption class="caption">Heart enamel pins that say "I'll be okay"</figcaption>
+              </figure>
+            </div>
+            <div class="slideDiv">
+              <figure class="slide fade">
+                <img src="https://78.media.tumblr.com/81feea79402300f574f3331b32d3a42f/tumblr_pcdu9q90JB1x3qi68o2_400.jpg" style="width:100%;">
+                <figcaption class="caption">A kitty cat</figcaption>
+              </figure>
+            </div>
+            <div class="slideDiv">
+              <figure class="slide fade">
+                <img src="https://78.media.tumblr.com/9958dcf83c1f56b3e0da8aaea4937249/tumblr_pcitcsc7Vl1u17xrqo1_540.png" style="width:100%;">
+                <figcaption class="caption">Gay and Lesbian rights</figcaption>
+              </figure>
+            </div>
+            <div class="slideDiv">
+              <figure class="slide fade">
+                <img src="https://78.media.tumblr.com/08c4225a92b5323110b3cf7c978b25f8/tumblr_pb8jjnTiDB1vh6d22o1_540.jpg" style="width:100%;">
+                <figcaption class="caption">Beautiful starry sky</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div id="links">
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          </div>
+          <div class="progressDots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+        </div>
+        <div id="content">
+          <h1>About Us</h1>
+          <details>
+            <summary>Who are we?</summary>
+            <p>Pride Alliance is a student group at Washington University in St. Louis made for all LGBTQ+ students. Allies are also encouraged to support us and attend our events! Pride Alliance is a safe space for all students so we do not tolerate bigotry or exclusion of any marginalized groups. If you'd like to join our student group you can <a href="/join">join our mailing list</a>!</p>
+          </details>
+          <details>
+            <summary>What do we do?</summary>
+            <p>We host many social and activism events as well as have volunteer trips, invite influential speakers, and host fun charity events. We also host Suite Sundays which take place in the Pride Suite where we chill and eat sweets and enjoy each others company.</p>
+          </details>
+          <details>
+            <summary>How can we be contacted?</summary>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim eleifend justo, vitae gravida leo ullamcorper varius. Sed et urna non dolor tincidunt fringilla. In in velit sed sem cursus lobortis a et nunc. Nullam hendrerit sodales sapien non porttitor. Mauris vel eleifend purus, nec dignissim orci. Ut posuere eros ut ipsum facilisis, ut feugiat erat efficitur. Morbi pellentesque leo at mauris faucibus, suscipit rutrum mi gravida. Vestibulum fringilla porta enim, eget blandit sapien efficitur in. Fusce ornare pellentesque augue, quis condimentum justo fringilla quis. Mauris eu est enim. Maecenas nisl nisl, imperdiet mollis bibendum consectetur, viverra id odio. Etiam semper tellus et consequat auctor. Mauris fringilla vel nisi at laoreet.</p>
+            <p>In neque sem, pellentesque id magna sit amet, interdum feugiat eros. Aenean euismod dui ut sagittis facilisis. Fusce lacus urna, semper id placerat posuere, bibendum eu arcu. Aenean vehicula sed purus non faucibus. Sed hendrerit enim sed massa tincidunt dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam accumsan volutpat ligula et eleifend.</p>
+          </details>
+          <details>
+            <summary>Affiliated student groups</summary>
+            <p>
+              There are many other student groups for LGBT students that have different or more specific goals.
+            </p>
+          </details>
+        </div>
+      </main>
+      <footer>
+        Pride Alliance &copy; 2018
+      </footer>
+    </div>
+  </body>
+</html>
